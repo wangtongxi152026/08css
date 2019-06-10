@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin: 100px auto;
+            transition: 0.5s all;
+        }
+        body{
+            perspective: 300px;
+        }
+        div:hover{
+            transform: translateZ(100px);
+            /*透视 是眼睛到屏幕的距离  */
+            /*translateZ 是物体到屏幕的距离 Z 来控制 物体近大远小的具体情况*/
+            /*translateZ 越大 我们看到的物体越近 物体越大*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

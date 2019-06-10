@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*transition: translate(x,y);*/
+            /*变形       ：移动*/
+            transition:all 0.5s ;
+        }
+        div:active{                        /*a:active 鼠标点击没有松开鼠标的时间，触发的状态*/
+                                           /*transform: translate(50px,50px);             点击后移动位置*/
+           /* transform:translate(50px); *//* 点击后只移动x轴*/
+            transform:translate(0,50px); /* 点击后只移动轴*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

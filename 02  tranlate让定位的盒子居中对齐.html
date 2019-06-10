@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>居中对齐</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /*transform: translateX(100px);  水平移动100px*/
+
+            /*transform: translateX(50%);*/
+            /*translate移动距离 单位是  %  不是以父级的宽度为准，1️⃣自身宽度为准
+            走div盒子宽度200的一半 为100px*/
+
+            /*之前的盒子居中对齐的法式*/
+            /*position:absolute;*/
+            /*left: 50%;*/
+            /*marigin-left:100px;*/
+
+            /*现在*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform：tanslate(-50%,-50%)
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
