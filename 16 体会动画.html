@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16 animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation:go 2s  0s infinite alternate;
+            /*animation:go 2s ease 0s infinite alternate ;*/
+            /*animation:动画名称 动画时间 运动曲线  何时开始  播放次数  是否反方向;*/
+        }
+        /*@keyframes 动画名称 {} 定义动画*/
+        @keyframes go {
+            0%{
+                transform: translate3d(0,0,0);
+            }
+            25%{
+                transform: translate3d(800px,0,0);
+            }
+            50%{
+                transform: translate3d(800px,400px,0);
+            }
+            75%{
+                transform: translate3d(0px,400px,0);
+            }
+            100%{
+                transform: translate3d(0,0,0);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

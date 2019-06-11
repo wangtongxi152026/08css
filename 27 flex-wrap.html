@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>27flex wrap</title>
+    <style>
+        section {
+            width: 1000px;
+            height: 1000px;
+            border: 2px solid red;
+            margin: 100px auto;
+            /*给父级盒子添加flex*/
+            display: flex;
+
+            /*水平对齐*/
+            /*justify-content: flex-start;*/ /* 让子元素从父容器的开头开始排列 但是顺序不变*/
+            /*justify-content: flex-end;  */ /*让子元素从父容器的结尾开始排列 但是顺序不变*/
+            /*justify-content: center;          !*  让子元素从父容器的中间开始排列 但是顺序不变*!*/
+            /*justify-content: space-around;          !*  让子元素从父容器的中间开始排列 但是顺序不变*!*/
+            /*justify-content: space-between;          !*  让子元素从父容器排列 空白部分中间排列*!*/
+            justify-content: space-evenly; /*  让子元素zai父容器的中间排列 空白部分等距分布*/
+
+            /*垂直对齐*/
+            /*align-items: flex-start;              !*上部对齐*!*/
+            /*align-items: flex-end;                底部对齐*/
+            /*align-items: center;                  盒子居住对齐*/
+            /*align-items: center;                  !*盒子居住对齐*!*/
+            align-items: stretch; /*让子元素垂直方西拉伸 与父级容器一样高   类似height：100%*/
+
+            /*flex-wrap: nowrap; !*  默认值。       规定灵活的项目不拆行或不拆列。  不换行，则 收缩（压缩） 显示  强制一行内显示*!*/
+            flex-wrap: wrap;        /*规定灵活的项目在必要的时候拆行或拆列。*/
+            /*flex-wrap:wrap-reverse ;     !*规定灵活的项目在必要的时候拆行或拆列，但是以相反的顺序。*!*/
+
+        }
+        section div{
+            height: 200px;
+            width: 250px;
+        }
+
+        section div:nth-child(1){
+            background-color: pink;
+        }
+        section div:nth-child(2){
+            background-color: purple;
+        }
+        section div:nth-child(3){
+            background-color: skyblue;
+        }
+        section div:nth-child(4){
+            background-color: hotpink;
+        }
+        section div:nth-child(5){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+</body>
+</html>

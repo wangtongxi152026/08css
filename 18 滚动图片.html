@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            width: 882px;
+            height: 86px;
+            /*border: 1px solid red;*/
+            margin: 200px auto;
+            overflow: hidden;
+        }
+        nav ul{
+            width: 200%;
+            animation: moving 6s linear infinite ;
+            /*animation:动画名称 动画时间 运动曲线  何时开始  播放次数  是否反方向;*/
+        }
+        nav ul li{
+            float: left;
+            list-style: none;
+        }
+        @keyframes moving {
+            from{
+                 transform: translateX(0);
+            }
+            to{
+                 transform: translateX(-882px);
+            }
+        }
+        nav:hover ul{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><img src="images/nav1.jpg" alt=""></li>
+        <li><img src="images/nav2.jpg" alt=""></li>
+        <li><img src="images/nav3.jpg" alt=""></li>
+        <li><img src="images/nav4.jpg" alt=""></li>
+        <li><img src="images/nav5.jpg" alt=""></li>
+        <li><img src="images/nav6.jpg" alt=""></li>
+        <li><img src="images/nav7.jpg" alt=""></li>
+        <li><img src="images/nav1.jpg" alt=""></li>
+        <li><img src="images/nav2.jpg" alt=""></li>
+        <li><img src="images/nav3.jpg" alt=""></li>
+        <li><img src="images/nav4.jpg" alt=""></li>
+        <li><img src="images/nav5.jpg" alt=""></li>
+        <li><img src="images/nav6.jpg" alt=""></li>
+        <li><img src="images/nav7.jpg" alt=""></li>
+    </ul>
+</nav>
+</body>
+</html>
