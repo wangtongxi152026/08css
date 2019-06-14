@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认识preserve-3d</title>
+    <style>
+        body{
+            perspective: 1000px;
+        }
+        div {
+            width: 100px;
+            height: 145px;
+            border: 2px solid red;
+            margin: 100px auto;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+            transition: all 2s  ;
+            /*让父盒子里面的子盒子一3d效果显示*/
+        }
+        div img{
+            display: block;
+            transform: rotateY(30deg);
+            border: 2px solid blue;
+
+        }
+        div:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="images/pk1.png" width="100">
+</div>
+</body>
+</html>
