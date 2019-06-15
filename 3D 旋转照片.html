@@ -15,10 +15,10 @@
             background-size:cover ;
             position: relative;
             transform-style: preserve-3d;
-            transition:  5s linear;
+            transition:  10s linear;
         }
         section:hover {
-            transform: rotateY(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
         }
         section div{
             height: 100%;
@@ -31,22 +31,23 @@
 			translateZ(400px)
 		}
 		section div:nth-child(1){
-            transform:   rotateY(0deg);
+            transform:   rotateY(0deg) translateZ(400px);
 }
+
  		section div:nth-child(2){
-            transform: rotateY(60deg);
+            transform: rotateY(60deg) translateZ(400px);
         }
         section div:nth-child(3){
-            transform:rotateY(120deg);
+            transform:rotateY(120deg) translateZ(400px);
         }
         section div:nth-child(4){
-            transform:rotateY(180deg);
+            transform:rotateY(180deg) translateZ(400px);
         }
        section div:nth-child(5){
-            transform:rotateY(240deg);
+            transform:rotateY(240deg) translateZ(400px);
         }
        section div:nth-child(6){
-            transform:rotateY(300deg);
+            transform:rotateY(300deg) translateZ(400px);
         }
 
     </style>
